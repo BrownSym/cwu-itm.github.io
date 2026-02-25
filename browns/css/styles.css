@@ -52,3 +52,25 @@ ol {
     font-size:.875rem;
 
 }
+
+h1, h2, h3 {
+
+    background-color: darkolivegreen;
+    color: blanchedalmond;
+    padding: 1rem;
+}
+body{
+    padding: 0 1rem;
+}
+img{
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    border: #333;
+}
+p, ul, ol, li, figcaption{
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.6;
+    
+}
