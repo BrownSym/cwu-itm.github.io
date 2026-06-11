@@ -1,0 +1,103 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Styles */
+
+html {
+font-size: 16px;
+scroll-behavior: smooth;
+}
+
+body {
+background-color: #FAF3E8;
+color: #333333;
+font-family: Roboto, sans-serif;
+margin: 0 auto;
+padding: 2rem;
+width: 90%;
+max-width: 57rem;
+line-height: 1.6;
+}
+
+/* Headings */
+
+h1 {
+font-family: Oswald, sans-serif;
+font-size: 4rem;
+background-color: #5F6F52;
+color: #FAF3E8;
+padding: 1rem;
+margin-bottom: 2rem;
+border-radius: 0.7rem;
+}
+
+h2 {
+font-family: Oswald, sans-serif;
+font-size: 2rem;
+color: #333333;
+background-color: #FAF3E8;
+border-bottom: 3px solid #5F6F52;
+padding-bottom: 0.5rem;
+margin-top: 3rem;
+margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+
+p {
+font-size: 1rem;
+margin-bottom: 2rem;
+max-width: 50rem;
+}
+
+/* Navigation */
+
+nav {
+margin-top: 2rem;
+}
+
+nav ul {
+list-style-type: none;
+padding-left: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+nav li {
+    border: 3px solid #5F6F52;
+    border-radius: 0.75rem;
+    text-align: center;
+
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+nav a {
+ display: block;
+    padding: 1rem;
+
+    color: #5F6F52;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav li:hover {
+  background-color: #E8E2D6;
+    transform: translateY(-2px);
+}
+
+/* Links */
+
+a {
+color: #5F6F52;
+font-weight: 700;
+text-decoration: none;
+}
+
+a:hover {
+color: #333333;
+text-decoration: underline;
+}

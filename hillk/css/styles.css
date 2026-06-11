@@ -1,0 +1,49 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ------------------------------
+   Global Styles
+------------------------------ */
+
+body {
+  background-color: #FDFBF7;  
+  color: #1A1A1A;             
+  font-family: Inter, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Layout container */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+
+h1, h2 {
+  color: #1A1A1A;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+.blurb-text {
+  max-width: 750px;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+

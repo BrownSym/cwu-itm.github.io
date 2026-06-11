@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niccolas Knight | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <!-- LAVA LAMP BACKGROUND -->
+    <div class="lava-bg">
+      <div class="lava-blob blob1"></div>
+      <div class="lava-blob blob2"></div>
+      <div class="lava-blob blob3"></div>
+      <div class="lava-blob blob4"></div>
+    </div>
+
+    <h1 class="matrix-reveal">Hi, I'm Nic!</h1>
+
+    <p class="matrix-reveal">
+      I'm a sophomore studying ITM cybersecurity, and a lot of how I see technology comes from real life, not just classes. I'm drawn to VR interfaces, human-centered design, and understanding how digital systems actually feel to the people who use them. I like building things from the ground up and paying attention to the small details that shape someone's experience. My work usually sits in the space between technical structure and lived experience, and I try to create things that make sense to real people, not just on paper. I care about how systems affect us, how we move through them, and how design can make technology feel more supportive and more human.</p>
+
+    <h2 class="matrix-reveal">My Portfolio</h2>
+
+    <p class="matrix-reveal">
+My portfolio is about how people connect with the systems around them and how those systems shape the way we move, think, and interact. A lot of what I've done this quarter comes from trying to understand the human side of technology, whether that's inside a VR platform like VRChat, a communication tool like Discord, or the everyday interfaces we rely on without thinking. Even though not every system I studied is accessible to everyone, working with them helped me see how design choices affect real people and why it matters to build technology that supports more than just the default user. My work focuses on the relationship between humans and the systems we use, and how thoughtful design can make those systems feel clearer, more intuitive, and more supportive for the people who depend on them.</p>
+
+    <nav>
+      <ul>
+        <li><a href="blog/index.html">My Blog</a></li>
+        <li><a href="https://www.figma.com/board/RaMGRHpyLYVsIIhxnlKMLE/VRChat-System-Model-Nic-Knight?node-id=0-1&t=sEP5a8dQsXmryAkd-1" target="_blank">Design Challenge 1</a></li>
+        <li><a href="https://www.figma.com/board/fEun6kwztWDqDDPdz8keG8/Discord-UI-Explained?node-id=0-1&t=klXS9uEBJanOsbYK-1" target="_blank">Design Challenge 2</a></li>
+        <li><a href="https://www.figma.com/proto/BtmetybM7hmHm99UWVRllb/Discord-Prototype?node-id=0-1&t=JuxcWmiYkOHgoPRJ-1" target="_blank">Design Challenge 3</a></li>
+      </ul>
+    </nav>
+
+    <!-- MATRIX SCRIPT -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".matrix-reveal");
+      elements.forEach((el, index) => {
+        const text = el.innerText;
+        el.innerHTML = "";
+        [...text].forEach((char, i) => {
+          const span = document.createElement("span");
+          span.textContent = char;          
+          span.style.display = "inline";
+          span.style.opacity = "0";
+          span.style.animation = "matrixLetter 0.6s forwards";
+          span.style.animationDelay = `${(i * 0.02) + (index * 0.3)}s`;
+          el.appendChild(span);
+        });
+      });
+    });
+    </script>
+
+  </body>
+</html>

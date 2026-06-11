@@ -1,0 +1,128 @@
+:root {
+    --bg-color: #1a1a1a;       /* Sleek matte charcoal */
+    --card-bg: #242424;        /* Slightly lighter charcoal for contrast */
+    --text-main: #ffffff;      /* Pure white for headers */
+    --text-muted: #cccccc;     /* Clean light gray for readable paragraphs */
+    --accent: #d4af37;         /* Elegant warm gold for links and borders */
+    --accent-hover: #f3e5ab;   /* Brighter cream-gold for interactive states */
+    --font-sans: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    min-height: 100vh;
+    text-align: center;        
+}
+
+body > * {
+    max-width: 650px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+    letter-spacing: -0.025em;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+nav {
+    background-color: var(--card-bg);
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    margin-top: 3rem;
+    border: 1px solid rgba(212, 175, 55, 0.15); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+   
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    max-width: 400px;        
+    display: flex;
+    flex-direction: column;   
+    gap: 1rem;
+}
+
+nav a {
+    display: block;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.85rem 1.5rem;
+    background-color: rgba(212, 175, 55, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    transition: all 0.25s ease-in-out;
+}
+nav a:hover,
+nav a:focus {
+    color: var(--bg-color);
+    background-color: var(--accent);
+    border-color: var(--accent);
+    transform: scale(1.03);    
+    outline: none;
+}
+
+nav a:active {
+    transform: scale(1);
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+   
+    h2 {
+        font-size: 1.4rem;
+    }
+   
+    nav {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/*update for file */

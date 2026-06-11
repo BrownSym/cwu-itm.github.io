@@ -1,0 +1,92 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global Styles */
+html {
+    font-size: 16px;
+    color: #333;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFF;
+    color: #333;
+    line-height: 1.7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+main {
+    max-width: 48rem;
+    margin:0rem;
+    padding: 2rem 1rem;
+
+}
+.page-header {
+    margin-bottom: 1rem;
+}
+
+.page-header h1 {
+    font-family: Oswald, sans-serif;
+    font-size:3rem;
+    font-weight: 600;
+    color: #054e70;
+    margin: 0;
+
+    border-bottom: 3px solid #3EB0C8;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+
+h2 {
+    font-family: Oswald, sans-serif;
+    font-size:1.8rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    color: #054e70;
+    border-left: 4px solid;
+    border-color: #3EB0C8;
+    padding-left: 1rem;
+}
+
+p{
+    font-size: 1rem;
+    margin: 0.75rem 0;
+} 
+
+#main-nav ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+#main-nav li {
+    margin-bottom: 0.9rem;
+}
+
+#main-nav a {
+    color: #054e70;
+    text-decoration: none;
+    font-weight: 500;
+}
+#main-nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
